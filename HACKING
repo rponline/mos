@@ -18,21 +18,22 @@ another system (or virtualenv), see the file "requirements.txt".
 3. Create the virtualenv (call it "devel"): virtualenv devel
 4. Acivate the "devel" virtualenv: source devel/bin/activate
 5. Install dependencies: pip install -r requirements.txt
-6. Optional: Install the locale packages for de_DE.UTF-8
-7. python manage.py generate_secret_key
-8. Put output into secret_key.py (SECRET_KEY='<output>')
-9. python manage.py migrate
-10. python manage.py createsuperuser
+6. Install dev dependencies: pip install -r requirements-dev.txt
+7. Optional: Install the locale packages for de_DE.UTF-8
+8. python manage.py generate_secret_key
+9. Put output into secret_key.py (SECRET_KEY='<output>')
+10. python manage.py migrate
+11. python manage.py createsuperuser
 
-11. Load example data (optional, but recommended):
+12. Load example data (optional, but recommended):
      python manage.py loaddata core/fixtures/default_choices.json
      python manage.py loaddata members/fixtures/default_choices.json
      python manage.py loaddata members/fixtures/dummy_members.json
      python manage.py loaddata cal/fixtures/events_2012-09-20.json
 
-12. python manage.py runserver
-13. Point your browser to http://127.0.0.1:8000/
-14. Login with your freshly-created user account
+13. python manage.py runserver
+14. Point your browser to http://127.0.0.1:8000/
+15. Login with your freshly-created user account
 
 Testing
 =======
